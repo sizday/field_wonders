@@ -5,7 +5,7 @@ public class choice {
     public static int choice_symbol(char[] word, char[] secret_word, int count) {
         Scanner in = new Scanner(System.in);
         System.out.println("Назовите следующую букву");
-        char[] symbol = in.nextLine().toCharArray();
+        char[] symbol = in.nextLine().toLowerCase().toCharArray();
         if (symbol.length == 1) {
             for (int i = 0; i < word.length; i++) {
                 char current_symbol = word[i];
@@ -15,6 +15,8 @@ public class choice {
                 }
             }
         }
+        else
+            System.out.println("Некорректный ввод");
         return count;
     }
 
