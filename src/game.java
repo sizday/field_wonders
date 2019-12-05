@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class main {
-    public static void main(String args[]) {
+public class game {
+    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Приветствую тебя в поле чудес\nОтгадай мое слово\n");
-        String word_string = list_word.random_word();
+        String word_string = list_word.describe();
         char[] word = word_string.toCharArray();
         String secret_word_string = "*".repeat(word.length);
         char[] secret_word = secret_word_string.toCharArray();
