@@ -1,7 +1,7 @@
 import java.util.Random;
 
 
-class listWord {
+class ListWord {
 
     private static String randomWord(int pos) {
         String[] texts = {"павлин", "утконос", "крокодил", "попугай", "черепаха"};

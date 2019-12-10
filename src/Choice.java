@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class choice {
+class Choice {
 
     static int choiceSymbol(char[] word, char[] secret_word, int count) {
         Scanner in = new Scanner(System.in);
