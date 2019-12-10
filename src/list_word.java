@@ -1,9 +1,9 @@
 import java.util.Random;
 
 
-class list_word {
+class listWord {
 
-    private static String random_word(int pos) {
+    private static String randomWord(int pos) {
         String[] texts = {"павлин", "утконос", "крокодил", "попугай", "черепаха"};
         return texts[pos];
     }
@@ -17,6 +17,6 @@ class list_word {
         Random random = new Random();
         int pos = random.nextInt(description.length);
         System.out.println(description[pos]);
-        return random_word(pos);
+        return randomWord(pos);
     }
 }
